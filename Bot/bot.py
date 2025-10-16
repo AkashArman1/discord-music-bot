@@ -61,4 +61,6 @@ async def skip(ctx):
     else:
         await ctx.send("Nothing is playing!")
 
-bot.run("MTQyODM4NjA0MjQ0Mzk4OTEyMw.Gh1BaM.iCwfhFO6GaDr5LIoVj7-lBnF70YeVDaOQvCCSc")  # replace with your token
+import os
+bot.run(os.getenv("DISCORD_BOT_TOKEN"))
+
